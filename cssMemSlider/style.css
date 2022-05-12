@@ -10,7 +10,7 @@ input{
     justify-content: center;
     
 }
-.switcher-radio-box span{
+.all-joke span{
     display: block;
     font-family: 'Koulen', cursive;
     color: aliceblue;
@@ -33,10 +33,10 @@ input{
     background-color: bisque;
     transition: all 0.5s;
 }
-#changer-btn-1:checked ~ .switcher-radio-box .first{
+#changer-btn-1:checked ~ .all-joke .first{
     background-color: aliceblue;
 }
-#changer-btn-2:checked ~ .switcher-radio-box .second{
+#changer-btn-2:checked ~ .all-joke .second{
     background-color: aliceblue;
 }
 /* /////////////////////////mem switcher/////////////////////////// */
@@ -131,75 +131,149 @@ input{
 }
 
 /* //////////////////////////////switcher and active btns////////////////////// */
-#first-mem-btn-1:checked ~ .switcher label:nth-child(1){
+#first-mem-btn-6:checked ~ .switcher label:nth-child(1){
     background-color: aliceblue;
 }
-#first-mem-btn-1:checked ~ .switcher label:nth-child(1):hover{
+#first-mem-btn-6:checked ~ .switcher label:nth-child(1):hover{
     border: 2px solid brown;
 }
-#first-mem-btn-2:checked ~ .switcher label:nth-child(2){
+#first-mem-btn-7:checked ~ .switcher label:nth-child(2){
     background-color: aliceblue;
 }
-#first-mem-btn-2:checked ~ .switcher label:nth-child(2):hover{
+#first-mem-btn-7:checked ~ .switcher label:nth-child(2):hover{
     border: 2px solid brown;
 }
-#first-mem-btn-3:checked ~ .switcher label:nth-child(3){
+#first-mem-btn-8:checked ~ .switcher label:nth-child(3){
     background-color: aliceblue;
 }
-#first-mem-btn-3:checked ~ .switcher label:nth-child(3):hover{
+#first-mem-btn-8:checked ~ .switcher label:nth-child(3):hover{
     border: 2px solid brown;
 }
-#first-mem-btn-4:checked ~ .switcher label:nth-child(4){
+#first-mem-btn-9:checked ~ .switcher label:nth-child(4){
     background-color: aliceblue;
 }
-#first-mem-btn-4:checked ~ .switcher label:nth-child(4):hover{
+#first-mem-btn-9:checked ~ .switcher label:nth-child(4):hover{
     border: 2px solid brown;
 }
-#first-mem-btn-5:checked ~ .switcher label:nth-child(5){
+#first-mem-btn-10:checked ~ .switcher label:nth-child(5){
     background-color: aliceblue;
 }
-#first-mem-btn-5:checked ~ .switcher label:nth-child(5):hover{
+#first-mem-btn-10:checked ~ .switcher label:nth-child(5):hover{
     border: 2px solid brown;
 }
 
 
 /* ///////////////////////////mem images///////////////////////////////// */
-#first-mem-btn-1:checked ~ .foto-box .images{
+#first-mem-btn-6:checked ~ .foto-box .images{
     margin-left: 0;
 }
-#first-mem-btn-2:checked ~ .foto-box .images{
+#first-mem-btn-7:checked ~ .foto-box .images{
     margin-left: -100%;
 }
-#first-mem-btn-3:checked ~ .foto-box .images{
+#first-mem-btn-8:checked ~ .foto-box .images{
     margin-left: -200%;
 }
-#first-mem-btn-4:checked ~ .foto-box .images{
+#first-mem-btn-9:checked ~ .foto-box .images{
     margin-left: -300%;
 }
-#first-mem-btn-5:checked ~ .foto-box .images{
+#first-mem-btn-10:checked ~ .foto-box .images{
     margin-left: -400%;
 }
 .foto-box .images{
     transition: all 0.5s;
 }
 /* //////////////////////////////mem text////////////////////////// */
-#first-mem-btn-1:checked ~ .mem-text-box .texts{
+#first-mem-btn-6:checked ~ .mem-text-box .texts{
     margin-left: 0;
 }
-#first-mem-btn-2:checked ~ .mem-text-box .texts{
+#first-mem-btn-7:checked ~ .mem-text-box .texts{
     margin-left: -100%;
 }
-#first-mem-btn-3:checked ~ .mem-text-box .texts{
+#first-mem-btn-8:checked ~ .mem-text-box .texts{
     margin-left: -200%;
 }
-#first-mem-btn-4:checked ~ .mem-text-box .texts{
+#first-mem-btn-9:checked ~ .mem-text-box .texts{
     margin-left: -300%;
 }
-#first-mem-btn-5:checked ~ .mem-text-box .texts{
+#first-mem-btn-10:checked ~ .mem-text-box .texts{
     margin-left: -400%;
 }
 .mem-text-box .texts{
     transition: all 0.5s;
 }
 
+/* //////////////////////second mem////////////////////////// */
 
+
+
+/* //////////////////////////////switcher and active btns////////////////////// */
+#first-mem-btn-6:checked ~ .switcher label:nth-child(6){
+    background-color: aliceblue;
+}
+#first-mem-btn-6:checked ~ .switcher label:nth-child(6):hover{
+    border: 2px solid brown;
+}
+#first-mem-btn-7:checked ~ .switcher label:nth-child(7){
+    background-color: aliceblue;
+}
+#first-mem-btn-7:checked ~ .switcher label:nth-child(7):hover{
+    border: 2px solid brown;
+}
+#first-mem-btn-8:checked ~ .switcher label:nth-child(8){
+    background-color: aliceblue;
+}
+#first-mem-btn-8:checked ~ .switcher label:nth-child(8):hover{
+    border: 2px solid brown;
+}
+#first-mem-btn-9:checked ~ .switcher label:nth-child(9){
+    background-color: aliceblue;
+}
+#first-mem-btn-9:checked ~ .switcher label:nth-child(9):hover{
+    border: 2px solid brown;
+}
+#first-mem-btn-10:checked ~ .switcher label:nth-child(10){
+    background-color: aliceblue;
+}
+#first-mem-btn-10:checked ~ .switcher label:nth-child(10):hover{
+    border: 2px solid brown;
+}
+
+
+/* ///////////////////////////mem images///////////////////////////////// */
+#first-mem-btn-6:checked ~ .foto-box .images:nth-child(2){
+    margin-left: 0;
+}
+#first-mem-btn-7:checked ~ .foto-box .images:nth-child(2){
+    margin-left: -100%;
+}
+#first-mem-btn-8:checked ~ .foto-box .images:nth-child(2){
+    margin-left: -200%;
+}
+#first-mem-btn-9:checked ~ .foto-box .images:nth-child(2){
+    margin-left: -300%;
+}
+#first-mem-btn-10:checked ~ .foto-box .images:nth-child(2){
+    margin-left: -400%;
+}
+.foto-box .images{
+    transition: all 0.5s;
+}
+/* //////////////////////////////mem text////////////////////////// */
+#first-mem-btn-6:checked ~ .mem-text-box .texts{
+    margin-left: 0;
+}
+#first-mem-btn-7:checked ~ .mem-text-box .texts{
+    margin-left: -100%;
+}
+#first-mem-btn-8:checked ~ .mem-text-box .texts{
+    margin-left: -200%;
+}
+#first-mem-btn-9:checked ~ .mem-text-box .texts{
+    margin-left: -300%;
+}
+#first-mem-btn-10:checked ~ .mem-text-box .texts{
+    margin-left: -400%;
+}
+.mem-text-box .texts{
+    transition: all 0.5s;
+}
