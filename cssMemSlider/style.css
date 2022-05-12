@@ -91,7 +91,7 @@ input{
 }
 /* foto */ 
 .foto-box{
-    width: 300px;
+    /* width: 300px; */
 }
 .overflow{
     width: 100%;
@@ -114,14 +114,15 @@ input{
 .texts{
     width: 500%;
     display: flex;
+    
 }
 .text{
     width: 20%; 
     font-family: 'Koulen', cursive;
     color: aliceblue;
     font-size: 24px;
-    padding: 10px;
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 /* switcher */
@@ -293,4 +294,41 @@ input{
 }
 .mem-text-box .texts{
     transition: all 0.5s;
+}
+
+@media (min-width: 768px) {
+    .all-joke{
+        min-width: 768px;
+    }
+}
+@media (min-width: 1200px) {
+    .all-joke{
+        min-width: 1200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .switcher-radio-box{
+        flex-grow: 1;
+    }
+    .wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .switcher{
+        order: 1;
+    }
+    .mem-text-box{
+        align-self: flex-start;
+        width: 50%;
+    }
+    .imgs img{
+        height: auto;
+    }
+    .text{
+        text-align: left;
+    }
+    .bird-foto-overflow{
+        width: 50%;
+    }
 }
