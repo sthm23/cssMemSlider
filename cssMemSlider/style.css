@@ -11,49 +11,62 @@ input{
     display: none;
 }
 .switcher-radio-box{
+    width: 19rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    box-sizing: content-box;
 }
 .all-joke span{
     display: block;
     font-family: 'Koulen', cursive;
     color: aliceblue;
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 2rem;
+    margin-right: 0.2rem;
 }
 
-
 .mem-switcher{
+    min-width: 3rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.mem-switcher div{
     cursor: pointer;
     display: inline-block;
-    width: 15px;
-    height: 10px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin-right: 15px;
+    width: 2.5rem;
+    height: 0.7rem;
+    border: 0.1rem solid white;
+    border-radius: 4rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
     background: rgb(244, 244, 244);
     transition: all 0.3s;
 }
-.mem-switcher:hover{
+.mem-switcher div:hover{
     background-color: bisque;
     transition: all 0.5s;
-    border: 2px solid red;
+    border: 0.1rem solid rgb(11, 133, 2);
 }
-#changer-btn-1:checked ~ .all-joke .first{
+.mem-switcher div:active{
+    background-color: bisque;
+    transition: all 0.5s;
+    border: 0.1rem solid red;
+}
+
+
+#changer-btn-1:checked ~ .all-joke .first div{
     background-color: rgb(0, 136, 255);
     
 }
-#changer-btn-2:checked ~ .all-joke .second{
+#changer-btn-2:checked ~ .all-joke .second div{
     background-color: rgb(0, 136, 255);
 }
 
-#changer-btn-1:checked ~ .all-joke .first:hover{
-    border: 2px solid rgb(11, 133, 2);
+#changer-btn-1:checked ~ .all-joke .first div:hover{
+    border: 0.1rem solid rgb(11, 133, 2);
 }
-#changer-btn-2:checked ~ .all-joke .second:hover{
-    border: 2px solid rgb(11, 133, 2);
+#changer-btn-2:checked ~ .all-joke .second div:hover{
+    border: 0.1rem solid rgb(11, 133, 2);
 }
 #changer-btn-1:checked ~.all-joke span:nth-child(1){
     color: rgb(0, 136, 255);
@@ -74,24 +87,24 @@ input{
 
 /* ///////////////////////mem wrapper box///////////////////////// */
 .all-joke{
-    margin-top: 20px;
-    min-width: 300px;
+    margin-top: 2rem;
+    min-width: 19rem;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 .wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 /* foto */ 
 .foto-box{
-    /* width: 300px; */
+    min-width: 19rem;
 }
 .overflow{
     width: 100%;
@@ -107,77 +120,89 @@ input{
 }
 .imgs img{
     width: 100%;
-    height: 87%;
 }
 
 /* text */ 
+.mem-text-box{
+    width: 19rem;
+}
 .texts{
     width: 500%;
     display: flex;
-    
+    background-color: rgb(88, 162, 162);
 }
 .text{
     width: 20%; 
     font-family: 'Koulen', cursive;
     color: aliceblue;
-    font-size: 24px;
+    font-size: 2rem;
     text-align: center;
     overflow-wrap: break-word;
 }
 
 /* switcher */
 .switcher{
+    width: 19rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: content-box;
 }
-.switcher label{
+.switcher label span{
     display: inline-block;
-    width: 55px;
-    height: 10px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin-right: 5px;
+    width: 2.5rem;
+    height: 1rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
     background: brown;
     cursor: pointer;
-    margin-right: 2%;
     transition: all 0.3s;
 }
-.switcher label:hover{
+.switcher label{
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+.switcher label span:active{
+    border: 0.1rem solid rgb(0, 4, 255);
+    transition: all 0.5s;
+}
+.switcher label span:hover{
     background-color: bisque;
     transition: all 0.5s;
 }
 
 /* //////////////////////////////switcher and active btns////////////////////// */
-#first-mem-btn-1:checked ~ .switcher label:nth-child(1){
+#first-mem-btn-1:checked ~ .switcher label:nth-child(1) span{
     background-color: aliceblue;
 }
-#first-mem-btn-1:checked ~ .switcher label:nth-child(1):hover{
-    border: 2px solid brown;
+#first-mem-btn-1:checked ~ .switcher label:nth-child(1) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-2:checked ~ .switcher label:nth-child(2){
+#first-mem-btn-2:checked ~ .switcher label:nth-child(2) span{
     background-color: aliceblue;
 }
-#first-mem-btn-2:checked ~ .switcher label:nth-child(2):hover{
-    border: 2px solid brown;
+#first-mem-btn-2:checked ~ .switcher label:nth-child(2) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-3:checked ~ .switcher label:nth-child(3){
+#first-mem-btn-3:checked ~ .switcher label:nth-child(3) span{
     background-color: aliceblue;
 }
-#first-mem-btn-3:checked ~ .switcher label:nth-child(3):hover{
-    border: 2px solid brown;
+#first-mem-btn-3:checked ~ .switcher label:nth-child(3) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-4:checked ~ .switcher label:nth-child(4){
+#first-mem-btn-4:checked ~ .switcher label:nth-child(4) span{
     background-color: aliceblue;
 }
-#first-mem-btn-4:checked ~ .switcher label:nth-child(4):hover{
-    border: 2px solid brown;
+#first-mem-btn-4:checked ~ .switcher label:nth-child(4) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-5:checked ~ .switcher label:nth-child(5){
+#first-mem-btn-5:checked ~ .switcher label:nth-child(5) span{
     background-color: aliceblue;
 }
-#first-mem-btn-5:checked ~ .switcher label:nth-child(5):hover{
-    border: 2px solid brown;
+#first-mem-btn-5:checked ~ .swit label:nth-child(5) span:hover{
+    border: 0.1rem solid brown;
 }
 
 
@@ -225,35 +250,35 @@ input{
 
 
 /* //////////////////////////////switcher and active btns////////////////////// */
-#first-mem-btn-6:checked ~ .switcher label:nth-last-child(5){
+#first-mem-btn-6:checked ~ .switcher label:nth-last-child(5) span{
     background-color: aliceblue;
 }
-#first-mem-btn-6:checked ~ .switcher label:nth-last-child(5):hover{
-    border: 2px solid brown;
+#first-mem-btn-6:checked ~ .switcher label:nth-last-child(5) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-7:checked ~ .switcher label:nth-last-child(4){
+#first-mem-btn-7:checked ~ .switcher label:nth-last-child(4) span{
     background-color: aliceblue;
 }
-#first-mem-btn-7:checked ~ .switcher label:nth-last-child(4):hover{
-    border: 2px solid brown;
+#first-mem-btn-7:checked ~ .switcher label:nth-last-child(4) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-8:checked ~ .switcher label:nth-last-child(3){
+#first-mem-btn-8:checked ~ .switcher label:nth-last-child(3) span{
     background-color: aliceblue;
 }
-#first-mem-btn-8:checked ~ .switcher label:nth-last-child(3):hover{
-    border: 2px solid brown;
+#first-mem-btn-8:checked ~ .switcher label:nth-last-child(3) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-9:checked ~ .switcher label:nth-last-child(2){
+#first-mem-btn-9:checked ~ .switcher label:nth-last-child(2) span{
     background-color: aliceblue;
 }
-#first-mem-btn-9:checked ~ .switcher label:nth-last-child(2):hover{
-    border: 2px solid brown;
+#first-mem-btn-9:checked ~ .switcher label:nth-last-child(2) span:hover{
+    border: 0.1rem solid brown;
 }
-#first-mem-btn-10:checked ~ .switcher label:nth-last-child(1){
+#first-mem-btn-10:checked ~ .switcher label:nth-last-child(1) span{
     background-color: aliceblue;
 }
-#first-mem-btn-10:checked ~ .switcher label:nth-last-child(1):hover{
-    border: 2px solid brown;
+#first-mem-btn-10:checked ~ .switcher label:nth-last-child(1) span:hover{
+    border: 0.1rem solid brown;
 }
 
 
@@ -296,14 +321,8 @@ input{
     transition: all 0.5s;
 }
 
-@media (min-width: 768px) {
-    .all-joke{
-        min-width: 768px;
-    }
-}
 @media (min-width: 1200px) {
     .all-joke{
-        min-width: 1200px;
         flex-direction: row;
         flex-wrap: wrap;
     }
