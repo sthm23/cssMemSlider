@@ -1,0 +1,203 @@
+body{
+    background: rgb(81, 81, 81);
+}
+
+input{
+    display: none;
+}
+.all-joke{
+    margin-top: 2rem;
+    min-width: 19rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+/* ///////////////////////mem wrapper box///////////////////////// */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+/* foto */ 
+.foto-box{
+    min-width: 19rem;
+}
+.overflow{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.images{
+    width: 500%;
+    display: flex;
+}
+.imgs{
+    width: 20%;
+}
+.imgs img{
+    width: 100%;
+}
+
+/* text */ 
+.mem-text-box{
+    width: 19rem;
+}
+.texts{
+    width: 500%;
+    display: flex;
+    background-color: rgb(88, 162, 162);
+}
+.text{
+    width: 20%; 
+    font-family: 'Koulen', cursive;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+/* switcher */
+.switcher{
+    width: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+.switcher label span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 1rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    background: brown;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.switcher label{
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+.switcher label span:active{
+    border: 0.1rem solid rgb(0, 4, 255);
+    transition: all 0.5s;
+}
+.switcher label span:hover{
+    background-color: bisque;
+    transition: all 0.5s;
+}
+
+/* //////////////////////////////switcher and active btns////////////////////// */
+#first-mem-btn-1:checked ~ .switcher label:nth-child(1) span{
+    background-color: aliceblue;
+}
+#first-mem-btn-1:checked ~ .switcher label:nth-child(1) span:hover{
+    border: 0.1rem solid brown;
+}
+#first-mem-btn-2:checked ~ .switcher label:nth-child(2) span{
+    background-color: aliceblue;
+}
+#first-mem-btn-2:checked ~ .switcher label:nth-child(2) span:hover{
+    border: 0.1rem solid brown;
+}
+#first-mem-btn-3:checked ~ .switcher label:nth-child(3) span{
+    background-color: aliceblue;
+}
+#first-mem-btn-3:checked ~ .switcher label:nth-child(3) span:hover{
+    border: 0.1rem solid brown;
+}
+#first-mem-btn-4:checked ~ .switcher label:nth-child(4) span{
+    background-color: aliceblue;
+}
+#first-mem-btn-4:checked ~ .switcher label:nth-child(4) span:hover{
+    border: 0.1rem solid brown;
+}
+#first-mem-btn-5:checked ~ .switcher label:nth-child(5) span{
+    background-color: aliceblue;
+}
+#first-mem-btn-5:checked ~ .swit label:nth-child(5) span:hover{
+    border: 0.1rem solid brown;
+}
+
+
+/* ///////////////////////////mem images///////////////////////////////// */
+#first-mem-btn-1:checked ~ .foto-box .images{
+    margin-left: 0;
+}
+#first-mem-btn-2:checked ~ .foto-box .images{
+    margin-left: -100%;
+}
+#first-mem-btn-3:checked ~ .foto-box .images{
+    margin-left: -200%;
+}
+#first-mem-btn-4:checked ~ .foto-box .images{
+    margin-left: -300%;
+}
+#first-mem-btn-5:checked ~ .foto-box .images{
+    margin-left: -400%;
+}
+.foto-box .images{
+    transition: all 0.5s;
+}
+/* //////////////////////////////mem text////////////////////////// */
+#first-mem-btn-1:checked ~ .mem-text-box .texts{
+    margin-left: 0;
+}
+#first-mem-btn-2:checked ~ .mem-text-box .texts{
+    margin-left: -100%;
+}
+#first-mem-btn-3:checked ~ .mem-text-box .texts{
+    margin-left: -200%;
+}
+#first-mem-btn-4:checked ~ .mem-text-box .texts{
+    margin-left: -300%;
+}
+#first-mem-btn-5:checked ~ .mem-text-box .texts{
+    margin-left: -400%;
+}
+.mem-text-box .texts{
+    transition: all 0.5s;
+}
+
+
+@media (min-width: 1200px) {
+    .all-joke{
+        width: 55rem;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .switcher-radio-box{
+        flex-grow: 1;
+    }
+    .wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .switcher{
+        order: 1;
+    }
+    .mem-text-box{
+        align-self: flex-start;
+        width: 50%;
+    }
+    .imgs img{
+        height: auto;
+    }
+    .text{
+        text-align: left;
+    }
+    .bird-foto-overflow{
+        width: 50%;
+    }
+}
